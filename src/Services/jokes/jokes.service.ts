@@ -4,7 +4,8 @@ import { Joke } from '../../Entities/joke.entity';
 @Injectable()
 export class JokesService {
     private jokes: Joke[] = [
-        { id: 1, type: 'knock-knock', content: 'Knock knock. Who’s there? Lettuce. Lettuce who? Lettuce in, it’s freezing out here!' },
+        { id: 1, type: 'test type 1', content: 'test content 1' },
+        { id: 2, type: 'test type 2', content: 'test content 2' },
     ];
 
     getRandomJoke(type?: string): Joke {
